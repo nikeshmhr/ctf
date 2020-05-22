@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Sun May 17 16:43:46 2020 as: nmap -sT -p 1-1000 -O -sC -sV -T3 -oA nmap-result 10.10.224.143 -->
+<nmaprun scanner="nmap" args="nmap -sT -p 1-1000 -O -sC -sV -T3 -oA nmap-result 10.10.224.143" start="1589713126" startstr="Sun May 17 16:43:46 2020" version="7.60" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="1000" services="1-1000"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1589713126" endtime="1589713218"><status state="up" reason="echo-reply" reason_ttl="254"/>
+<address addr="10.10.224.143" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="997">
+<extrareasons reason="conn-refused" count="997"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.4" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 95:97:fc:58:5f:b4:10:f2:60:1c:59:ee:71:8b:c9:ae (RSA)&#xa;  256 d1:0b:ec:65:86:2a:50:bc:da:ac:27:1d:43:67:a2:07 (ECDSA)&#xa;  256 c1:1d:08:26:7c:8a:d8:69:5f:34:e1:67:19:52:f4:d6 (EdDSA)"><table>
+<elem key="bits">2048.0</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">9597fc585fb410f2601c59ee718bc9ae</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQClJiKNQek9+MnCceb3jkO/Mp+PnwQgoISRQHyUuYCXWkZ1wZfLzd1udlSDSV0bLGBgn4p8BufTCRJ3nPGLeTfOPphqEekwupFJLILNflsjbeW7x3NKMffzTRK5h4YL7gVOyJYTLYyF7D6bevsmM4qX/u3W1Urlj0d/Uk4os/kJfgnaavRnCGObTUmqtpQkOpj2y3ksPa8HdzD2iubKhvnW6kJcUgbKqsDrTQJBWXTZljkOkC7YhB1ENp0PboS6v4/hrmceSvbqlFkgv0ugGeorkaApQds3ibBktoNqNfuQgWkzzO1PVu7v7R8tNAii2x25LbE1EYJaDPp5cjGGBFov</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">d10bec65862a50bcdaac271d4367a207</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIw9LAFu5li73hFl223QMmcBW0H9+qe/bZBCSvBnaQ4Cxh2q5MkeoGTwdIa/I3I3HcCWgV4wXRn7BXICAiLHQys=</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">c11d08267c8ad8695f34e1671952f4d6</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIAGBhX5V5U61cYSj8vvlLx9ktUtDImP+qIFMA8KEb2bd</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rpcbind" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="999"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="SimpleHTTPServer" version="0.6" extrainfo="Python 3.6.8" method="probed" conf="10"><cpe>cpe:/a:python:simplehttpserver:0.6</cpe></service><script id="http-server-header" output="SimpleHTTP/0.6 Python/3.6.8"><elem>SimpleHTTP/0.6 Python/3.6.8</elem>
+</script><script id="http-title" output="Directory listing for /"><elem key="title">Directory listing for /</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="22"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="32905"/>
+<osmatch name="Linux 3.1" accuracy="90" line="60007">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3.1</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2" accuracy="90" line="61524">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3.2</cpe></osclass>
+</osmatch>
+<osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6.17)" accuracy="90" line="58944">
+<osclass type="webcam" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6.17</cpe></osclass>
+<osclass type="webcam" vendor="AXIS" osfamily="embedded" accuracy="90"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe></osclass>
+</osmatch>
+<osmatch name="ASUS RT-N56U WAP (Linux 3.4)" accuracy="88" line="7916">
+<osclass type="WAP" vendor="Asus" osfamily="embedded" accuracy="88"><cpe>cpe:/h:asus:rt-n56u</cpe></osclass>
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="88" line="61176">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.8" accuracy="88" line="62168">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.7 - 3.10" accuracy="88" line="62781">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="QNAP QTS 4.0 - 4.2" accuracy="88" line="88660">
+<osclass type="storage-misc" vendor="QNAP" osfamily="QTS" osgen="4.X" accuracy="88"><cpe>cpe:/o:qnap:qts:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.10" accuracy="88" line="53781">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.9" accuracy="88" line="54028">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="88"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.60%E=4%D=5/17%OT=22%CT=1%CU=32905%PV=Y%DS=2%DC=I%G=Y%TM=5EC1194&#xa;OS:2%P=x86_64-pc-linux-gnu)SEQ(SP=F7%GCD=1%ISR=104%TI=Z%CI=Z%TS=A)OPS(O1=M5&#xa;OS:08ST11NW6%O2=M508ST11NW6%O3=M508NNT11NW6%O4=M508ST11NW6%O5=M508ST11NW6%O&#xa;OS:6=M508ST11)WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%D&#xa;OS:F=Y%T=FF%W=6903%O=M508NNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=FF%S=O%A=S+%F=AS%RD=0&#xa;OS:%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=&#xa;OS:Y%T=FF%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=FF%W=0%S=A%A=Z%F=R%O=%&#xa;OS:RD=0%Q=)T7(R=Y%DF=Y%T=FF%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=FF%I&#xa;OS:PL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=FF%CD=S)&#xa;"/>
+</os>
+<uptime seconds="777608" lastboot="Fri May  8 16:45:10 2020"/>
+<distance value="2"/>
+<tcpsequence index="245" difficulty="Good luck!" values="A488A819,D1CDC729,A07B55DA,7F790D13,5F0E6C30,4B01E391"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="2E58E983,2E58E9E6,2E58EA69,2E58EACC,2E58EB51,2E58EBB2"/>
+<times srtt="224804" rttvar="1025" to="228904"/>
+</host>
+<runstats><finished time="1589713218" timestr="Sun May 17 16:45:18 2020" elapsed="92.99" summary="Nmap done at Sun May 17 16:45:18 2020; 1 IP address (1 host up) scanned in 92.99 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

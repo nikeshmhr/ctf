@@ -1,0 +1,30 @@
+# Nmap 7.60 scan initiated Sun May 17 16:43:46 2020 as: nmap -sT -p 1-1000 -O -sC -sV -T3 -oA nmap-result 10.10.224.143
+Nmap scan report for 10.10.224.143
+Host is up (0.22s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 7.4 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 95:97:fc:58:5f:b4:10:f2:60:1c:59:ee:71:8b:c9:ae (RSA)
+|   256 d1:0b:ec:65:86:2a:50:bc:da:ac:27:1d:43:67:a2:07 (ECDSA)
+|_  256 c1:1d:08:26:7c:8a:d8:69:5f:34:e1:67:19:52:f4:d6 (EdDSA)
+111/tcp open  rpcbind
+999/tcp open  http    SimpleHTTPServer 0.6 (Python 3.6.8)
+|_http-server-header: SimpleHTTP/0.6 Python/3.6.8
+|_http-title: Directory listing for /
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.60%E=4%D=5/17%OT=22%CT=1%CU=32905%PV=Y%DS=2%DC=I%G=Y%TM=5EC1194
+OS:2%P=x86_64-pc-linux-gnu)SEQ(SP=F7%GCD=1%ISR=104%TI=Z%CI=Z%TS=A)OPS(O1=M5
+OS:08ST11NW6%O2=M508ST11NW6%O3=M508NNT11NW6%O4=M508ST11NW6%O5=M508ST11NW6%O
+OS:6=M508ST11)WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%D
+OS:F=Y%T=FF%W=6903%O=M508NNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=FF%S=O%A=S+%F=AS%RD=0
+OS:%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=FF%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=
+OS:Y%T=FF%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=FF%W=0%S=A%A=Z%F=R%O=%
+OS:RD=0%Q=)T7(R=Y%DF=Y%T=FF%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=FF%I
+OS:PL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=FF%CD=S)
+
+Network Distance: 2 hops
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun May 17 16:45:18 2020 -- 1 IP address (1 host up) scanned in 92.99 seconds
