@@ -31,11 +31,16 @@ ffuf -u http://$IP -w dirbuster-2.3-medium
 from #1 site author name is revealed as wade.
 look into his recent comment and you'll see note parzival
 its wordpress site so login with wade:parzival  // DOESNT GIVE ANYTHING FOR THIS QUESTINO
-use remmina to connect to server with creds wade:parzival
+use remmina to connect to server with creds wade:
+the user.txt file will be in desktop with content:
+THM{HACK_PLAYER_ONE}
 ```
 
 3. [Optional] Elevate privileges and read the content of root.txt
 
 ```
-
+enumerate more on remmina session. Browser history?
+search on bing: CVE-2019-1388 (Windows Privilege Escalation Through UAC)
+read file from Administrator's desktop
+THM{COIN_OPERATED_EXPLOITATION}
 ```
