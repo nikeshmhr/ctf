@@ -1,0 +1,17 @@
+POST /register.php HTTP/1.1
+Host: 10.10.99.22
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:76.0) Gecko/20100101 Firefox/76.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 65
+Origin: http://10.10.99.22
+Connection: close
+Referer: http://10.10.99.22/register.php
+Cookie: PHPSESSID=77u9s711j4c7tc547t4mgirsom
+Upgrade-Insecure-Requests: 1
+Pragma: no-cache
+Cache-Control: no-cache
+
+log_email=admin%40admin.com&log_password=admin&login_button=Login
