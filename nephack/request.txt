@@ -1,0 +1,17 @@
+POST /result3.php HTTP/1.1
+Host: health.nephack.io
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 222
+Origin: http://health.nephack.io
+Connection: close
+Referer: http://health.nephack.io/calculate.php
+Cookie: __cfduid=d83284c779bcbe32d076c77dabb84a2411591459634
+Upgrade-Insecure-Requests: 1
+Pragma: no-cache
+Cache-Control: no-cache
+
+total-chol=120&name=Abc&email=nikeshmhr%40wearehackerone.com&ip_address=104.27.130.251&address=address&age=20&gender=1&trigly=150&l_d_lip=100&hdl_cholesterol=20&sys_blood_pressue=90&d_blood_pressure=30&smoker=1&diabetes=1
