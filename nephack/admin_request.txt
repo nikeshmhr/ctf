@@ -1,4 +1,4 @@
-POST /system-management/admin/ HTTP/1.1
+POST /system-management/admin/index.php HTTP/1.1
 Host: health.nephack.io
 User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:77.0) Gecko/20100101 Firefox/77.0
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
@@ -8,7 +8,7 @@ Content-Type: application/x-www-form-urlencoded
 Content-Length: 53
 Origin: http://health.nephack.io
 Connection: close
-Referer: http://health.nephack.io/system-management/admin/
+Referer: http://health.nephack.io/system-management/admin/index.php
 Cookie: __cfduid=d77ee278e3eae0adc7c8b3627e82d56221591542897; PHPSESSID=hodbutm2q5btnq4qdbnuuhcu8e
 Upgrade-Insecure-Requests: 1
 

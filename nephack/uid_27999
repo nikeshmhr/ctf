@@ -1,0 +1,234 @@
+HTTP/1.1 200 OK
+Date: Thu, 11 Jun 2020 12:22:49 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: PHPSESSID=gn6j0ss4evk0lncbag80hv33hu; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+CF-Cache-Status: DYNAMIC
+cf-request-id: 0344ee49d30000dd0efe2b4200000001
+Server: cloudflare
+CF-RAY: 5a1b4cbc8a22dd0e-SIN
+Content-Encoding: gzip
+alt-svc: h2=":443"; ma=60
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>User Record</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style-responsive.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+  <section id="container" >
+      <header class="header black-bg">
+              <div class="sidebar-toggle-box">
+                  <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
+              </div>
+            <a href="#" class="logo"><b>Admin Dashboard</b></a>
+            <div class="nav notify-row" id="top_menu">
+               
+                         
+                   
+                </ul>
+            </div>
+            <div class="top-menu">
+            	<ul class="nav pull-right top-menu">
+                    <li><a class="logout" href="logout.php">Logout</a></li>
+            	</ul>
+            </div>
+        </header>
+      <aside>
+              <!--  ?uid=20K+ -->
+          <div id="sidebar"  class="nav-collapse ">
+              <ul class="sidebar-menu" id="nav-accordion">
+              
+              	  <p class="centered"><a href="#"><img src="assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
+              	  <h5 class="centered"></h5>
+              	  	
+                  <li class="mt">
+                      <a href="change-password.php">
+                          <i class="fa fa-file"></i>
+                          <span>Change Password</span>
+                      </a>
+                  </li>
+
+                  <li class="sub-menu">
+                      <a href="manage-users.php" >
+                          <i class="fa fa-users"></i>
+                          <span>Manage Users</span>
+                      </a>
+                   
+                  </li>
+                   <li class="sub-menu">
+                      <a href="manage-results.php" >
+                          <i class="fa fa-users"></i>
+                          <span>Manage Search Results</span>
+                      </a>
+                   
+                  </li>
+              
+                 
+              </ul>
+          </div>
+      </aside>
+
+            <section id="main-content">
+          <section class="wrapper">
+          	<h3><i class="fa fa-angle-right"></i> jackal's Information</h3>
+             	
+				<div class="row">
+				
+                  
+	                  
+                  <div class="col-md-12">
+                      <div class="content-panel">
+                      <p align="center" style="color:#F00;"></p>
+                <form class="form-horizontal style-form" name="form1" method="post" action="" onSubmit="return valid();">
+                           <p style="color:#F00"></p>
+                 <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">Name </label>
+                              <div class="col-sm-10">
+                    <input type="text" class="form-control" name="fname" value="jackal" >
+                              </div>
+                          </div>
+                          
+                              <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">Email</label>
+                              <div class="col-sm-10">
+                  <input type="text" class="form-control" name="lname" value="jackal@nephack.ctf" >
+                              </div>
+                          </div>
+
+                          <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">Address</label>
+                              <div class="col-sm-10">
+                  <input type="text" class="form-control" name="lname" value="NEPAL" >
+                              </div>
+                          </div>
+
+                          
+                              <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">IP Address </label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="email" value="68.183.95.149" readonly >
+                              </div>
+                          </div>
+                               <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">Age </label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="contact" value="28" >
+                              </div>
+                          </div>
+                           
+                            <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">Gender </label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="regdate" value="1" readonly >
+                              </div>
+                            </div>
+
+                               <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">Total Alcohol </label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="regdate" value="199.4" readonly >
+                              </div>
+                              </div>
+
+                               <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">HDL </label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="regdate" value="32" readonly >
+                              </div>
+                              </div>
+
+                               <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">Trigl </label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="regdate" value="222" readonly >
+                              </div>
+                              </div>
+
+
+                               <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">Systolic </label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="regdate" value="145" readonly >
+                              </div>
+                              </div>
+
+                               <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">Diastolic </label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="regdate" value="80" readonly >
+                              </div>
+                              </div>
+
+                               <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">Smoking </label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="regdate" value="1" readonly >
+                              </div>
+                              </div>
+
+                               <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">Diabetes </label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="regdate" value="1" readonly >
+                              </div>
+                              </div>
+
+                              <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">Total Percentage </label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="regdate" value="67.673333333333" readonly >
+                              </div></div>
+
+                              <div class="form-group">
+                              <label class="col-sm-2 col-sm-2 control-label" style="padding-left:40px;">Total LDL </label>
+                              <div class="col-sm-10">
+                                  <input type="text" class="form-control" name="regdate" value="123" readonly >
+                              </div></div>
+
+
+
+
+
+                          </div>
+                          <div style="margin-left:100px;">
+                         
+                          </form>
+                      </div>
+                  </div>
+              </div>
+		</section>
+              </section></section>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="assets/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="assets/js/common-scripts.js"></script>
+  <script>
+      $(function(){
+          $('select.styled').customSelect();
+      });
+
+  </script>
+
+  </body>
+</html>

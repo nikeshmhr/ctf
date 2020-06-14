@@ -154,7 +154,74 @@ hydra -l admin -P /media/nikesh/HDD/Security/wordlist/rockyou.txt health.nephack
 Issue with bruteforce (false positive)
 Fix failed message to <script>window.location.href='index.php'</script>
 
+dirsearch with Common-PHP-Filenames found:
+/logout.php
+
+dirsearch with -f switch to force extension
+
+```
+[00:04:37] 200 -    2KB - /system-management/admin/index.php
+[00:04:52] 403 -  580B  - /system-management/admin/assets/
+[00:05:03] 500 -    0B  - /system-management/admin/results.php
+[00:05:56] 200 -   75B  - /system-management/admin/logout.php
+[01:57:18] 200 -    3KB - /system-management/admin/prdetail.php
+```
+
+/prdetails.php
+
+<!-- uid=20K+ !-->
+
+gives response from ?uid=27980=> starts here..
+27999 => dr. jackal's info?
+what to do with it?
+42742 => last geniun patients
+92340 => last record
+31337 => admins info
+
+## nmap ip for admin & jackal (common)
+
+Starting Nmap 7.60 ( https://nmap.org ) at 2020-06-11 19:35 +0545
+Nmap scan report for nephack.ctf (68.183.95.149)
+Host is up (0.096s latency).
+Not shown: 996 closed ports
+PORT STATE SERVICE
+22/tcp open ssh
+135/tcp filtered msrpc
+139/tcp filtered netbios-ssn
+2020/tcp open xinupageserver
+
+enumerating more (-sV -sC)
+PORT STATE SERVICE VERSION │
+22/tcp open ssh OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0) │
+| ssh-hostkey: │
+| 2048 d9:5a:d7:73:3a:cc:fc:49:92:50:41:3f:99:5a:3c:aa (RSA) │
+| 256 c8:99:9d:c8:75:30:4d:1d:ce:52:2d:ba:1f:8d:1e:da (ECDSA) │
+|\_ 256 0e:f2:e5:30:cb:db:ab:87:40:97:26:ab:03:3a:ce:69 (EdDSA) │
+135/tcp filtered msrpc │
+139/tcp filtered netbios-ssn │
+2020/tcp open xinupageserver? │
+| fingerprint-strings: │
+| DNSStatusRequest, DNSVersionBindReq, JavaRMI, LANDesk-RC, LDAPBindReq, NCP, NULL, NotesRPC, RPCCheck\$│
+SMBProgNeg, TerminalServer, WMSRequest, X11Probe, afp, giop, oracle-tns: │
+| Enter password: │
+| FourOhFourRequest, SSLSessionReq, TLSSessionReq: │
+| Enter password: Buffer overflow detected! <== EXPLOIT THIS?
+
 ## TODO
 
-dirsearch /db/, /system-management/admin
-count no. of entries for table result
+dirsearch /db/
+count no. of entries for table result => sqli not possible anymore
+how to bypass login?????
+http://i.imgbox.com/abmuNQx2 => content hosted in s3 can't access directly requires auth
+strange behavior while logging in button name login is required to actually trigger login
+ftp 68.183.95.149 2020
+
+nmap -p2020 -sS -sV -O -Pn --script "(ftp\* or banner-plus) and not http-slowloris" --script-args=unsafe=1 68.183.95.149
+70K+ scanned
+
+nc host port
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+
+128.204.199.209 geniun patients have this ip
+
+Flag format cynical_flag{
