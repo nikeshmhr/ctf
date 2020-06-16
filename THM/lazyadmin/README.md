@@ -37,10 +37,11 @@ Credential => manager:Password123 can be found in mysql backup file
 
 Exploit on SweetRice CMS:
 Reference: https://www.exploit-db.com/exploits/40716
-Change filename to .phtml
+Arbitary file upload, upload revershell
+Change file extension to .phtml
 
 After shell:
-There is mysql creds lying around
+There is mysql creds lying around   => might be useful. didn't explore much
 Search gtfobin for all available setuid binaries, found we can work with mount
 Using gtfo might not be the way coz it is giving some error => sudo: no tty present and no askpass program specified
 
@@ -78,7 +79,7 @@ sudo /usr/bin/perl /home/itguy/backup.pl => will give you shell as root
 YOU ARE NOW ROOT
 
 Bruteforce ssh password:
-hydra -l user -P /media/nikesh/HDD/Security/wordlist/rockyou.txt 10.10.82.86 -t 4 ssh
+hydra -l user -P /media/nikesh/HDD/Security/wordlist/rockyou.txt 10.10.82.86 -t 4 ssh   => Was not effective
 ```
 
 ## Questions
