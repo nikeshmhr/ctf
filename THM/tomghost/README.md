@@ -56,7 +56,7 @@ Result => alexandru
 
 decrypt pgp using cracked password
 inside skyfuck's homedir
-import secret using => gpg --import tryhackme.asc
+import secret using => gpg --import tryhackme.asc	(needed, otherwise gives gpg: decryption failed: secret key not available error)
 then decrypt file => pgp --decrypt credential.pgp
 Result => merlin:asuyusdoiuqoilkda312j31k2j123j1g23g12k3g12kj3gk12jg3k12j3kj123j
 
