@@ -25,7 +25,7 @@ ps
 4. How do you change processes on the victim host(Ideally it will allow you to change users and gain the perms associated with that user)
 
 ```
-
+migrate
 ```
 
 5. What command lists files in the current directory on the remote machine?
