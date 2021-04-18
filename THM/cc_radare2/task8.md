@@ -7,7 +7,7 @@ Recall that in the task "Command Line Options" you learned that the -d flag has 
 ## Questions
 1. How do you set a breakpoint?
 ```
-dx
+db
 ```
 
 2. What command is used to print out the values of all the registers?
