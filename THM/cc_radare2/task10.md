@@ -10,6 +10,8 @@ if(val == 5) {
 ```
 You will never be able to get it to print out You win! because under normal circumstances val will never be set equal to 5. This is where write mode comes in, it allows you to change instructions so you can get certain conditions to execute. All commands involving write mode start with `w`
 
+Binary patching to complete `example4`. Seek to address `s <ADD>`, patch it `wx OPCODE`
+
 
 ## Questions
 1. How do you write a string to the current memory address.
